@@ -1,6 +1,6 @@
 # The Stem Soul Compatibility Test
 
-This code provides the "Stem Soul Compatibility Test" from the _Wasted Space on the 13th Floor_ as a (Streamlit)[http://streamlit.io] app.
+This code provides the "Stem Soul Compatibility Test" from the _Wasted Space on the 13th Floor_ as a [Streamlit](http://streamlit.io) app.
 
 This app is deployed at http://text2gene.com:8501 with zero guarantees of workingness or uptime.  :) 
 
