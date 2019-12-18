@@ -29,4 +29,13 @@ Finally, run the app!
 
     streamlit run 13thfloor.py
     
-This command should pop up a browser window already connecting to the app.  If not -- or if you're trying to deploy this on a remote server -- look for a line after you run this that contains the IP address and port number as in the following screenshot.
+This command should pop up a browser window already connecting to the app.  If not -- or if you're trying to deploy this on a remote server -- look for a line after you run this that contains the IP address and port number, such as:
+
+>   You can now view your Streamlit app in your browser.
+>   URL: http://localhost:8501
+
+Even if the displayed URL says "localhost", the app is actually binding to 0.0.0.0 -- meaning, you can connect to it remotely using a public or private IP address.  That's how this app is able to be served from text2gene.com.
+
+## Deploy Publicly At Your Own Risk
+
+`Streamlit` has not been security-hardened for exposure to the internet.  Leaving it running on a non-privileged port (e.g. its own 8501 or 8502 defaults) constitutes the best method of keeping your server _relatively_ safe from port-scanning script kiddies, but I make no guarantees of protection from determined attackers.
