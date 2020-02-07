@@ -2,13 +2,6 @@ import streamlit as st
 import st_state_patch
 import wastedspace
 
-#     * st.State
-#     * st.SessionState
-#     * st.GlobalState
-
-#def make_slider(label):
-#    return st.slider(label, min_value=1, max_value=4, value=2)
-
 SECTION_ORDER = [wastedspace.AGREE,
                  wastedspace.IDEAS,
                  wastedspace.SENSES,
@@ -29,8 +22,7 @@ if not s:
 st.title("Stem Soul Compatibility Test")
 st.header("Welcome to the 13th Floor. You're just in time.")
 
-s.name = st.text_input("Your Wasted Name")
-#s.group = st.text_input("Number of entities you are?")
+s.name = st.text_input("Enter Your Name Here")
 s.group = st.checkbox("Check here if you are more than 1 entity.", value=s.group)
 
 
